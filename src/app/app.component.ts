@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-store2';
+  imgParent = 'https://picsum.photos/200';
+
+  onLoaded(img: string) {
+    console.log('From parent ', img);
+  }
 }
