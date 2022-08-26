@@ -4,6 +4,15 @@
 <p>
   Total: ${{ total }}
 </p>
+<p>
+  Today: {{ today | date:'short' }}
+</p>
+<p>
+  Another date: {{ date | date:'yyyy.dd.MM' }}
+</p>
+<p>
+  {{ 'hEllO therE' | uppercase }}
+</p>
 <div class="products--grid">
   <app-product
     [product]="product"
